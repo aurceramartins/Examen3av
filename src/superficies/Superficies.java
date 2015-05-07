@@ -23,6 +23,7 @@ public class Superficies {
 
         System.out.println("What shape would you like to find the area of? (square, circle, triangle, rectangle):");
         shapeType = sc.nextLine();
+        
         System.out.println("You said: " + shapeType);
 
         if (shapeType.equals("square")) {
@@ -48,10 +49,13 @@ public class Superficies {
 
             System.out.println("what is the rectangles width?");
             sideLength = sc.nextFloat();
+            mod.setSideLength(sideLength);
             System.out.println("What is the rectangles height?");
             sideHeight = sc.nextFloat();
+            mod.setSideHeight(sideHeight);
             rectangleArea = sideLength * sideHeight;
-            System.out.println("The area for your rectangle is: " + rectangleArea);
+            mod.setRectangleArea(rectangleArea);
+            
 
         }
         if (shapeType.equals("triangle")) {
@@ -65,7 +69,7 @@ public class Superficies {
             System.out.println("What is the height of the triangle?");
             height = sc.nextFloat();
             triangleArea = (float) (0.5 * baseLength * height);
-            System.out.println("Your triangles area is: " + triangleArea);
+            
 
         }
         if (shapeType.equals("circle")) {
@@ -77,7 +81,7 @@ public class Superficies {
             radius = sc.nextFloat();
             circleArea = radius * radius;
             circleArea = (float) (3.14159265 * circleArea);
-            System.out.println("Your Circles area is " + circleArea);
+            
 
         }
 

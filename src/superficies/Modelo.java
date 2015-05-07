@@ -6,6 +6,7 @@ package superficies;
  */
 public class Modelo {
 
+    private String shapeType;
     private float squareArea;
     private float sideLength;
     private float sideHeight;
@@ -20,7 +21,8 @@ public class Modelo {
         
     }
 
-    public Modelo(float squareArea, float sideLength, float sideHeight, float rectangleArea, float baseLength, float height, float triangleArea, float radius, float circleArea) {
+    public Modelo(String shapeType, float squareArea, float sideLength, float sideHeight, float rectangleArea, float baseLength, float height, float triangleArea, float radius, float circleArea) {
+        this.shapeType = shapeType;
         this.squareArea = squareArea;
         this.sideLength = sideLength;
         this.sideHeight = sideHeight;
@@ -30,6 +32,14 @@ public class Modelo {
         this.triangleArea = triangleArea;
         this.radius = radius;
         this.circleArea = circleArea;
+    }
+
+    public String getShapeType() {
+        return shapeType;
+    }
+
+    public void setShapeType(String shapeType) {
+        this.shapeType = shapeType;
     }
 
     public float getSquareArea() {
@@ -103,6 +113,8 @@ public class Modelo {
     public void setCircleArea(float circleArea) {
         this.circleArea = circleArea;
     }
+
+   
 
     @Override
     public String toString() {
