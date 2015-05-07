@@ -8,6 +8,7 @@ import java.util.Scanner;
  * @author damian
  */
 public class Superficies {
+    Modelo mod=new Modelo();
 
     private static Scanner sc;
 
