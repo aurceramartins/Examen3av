@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Examen de MVC 3ª Avaliación
- *
+ * * Descripcion : El programa mediante el modelo MVC va a pedir por teclado la eleccion de un objeto triangulo cuadrado circulo o rectangulo y va a calcular sus areas.
  * @author damian
  */
 public class Superficies {
