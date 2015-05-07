@@ -18,7 +18,7 @@ public class Modelo {
     private float circleArea;
 
     public Modelo() {
-        
+
     }
 
     public Modelo(String shapeType, float squareArea, float sideLength, float sideHeight, float rectangleArea, float baseLength, float height, float triangleArea, float radius, float circleArea) {
@@ -114,12 +114,9 @@ public class Modelo {
         this.circleArea = circleArea;
     }
 
-   
-
     @Override
     public String toString() {
         return "Modelo{" + "squareArea=" + squareArea + ", sideLength=" + sideLength + ", sideHeight=" + sideHeight + ", rectangleArea=" + rectangleArea + ", baseLength=" + baseLength + ", height=" + height + ", triangleArea=" + triangleArea + ", radius=" + radius + ", circleArea=" + circleArea + '}';
     }
-    
 
 }
